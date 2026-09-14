@@ -1,0 +1,36 @@
+{
+  "name": "genpark-contextual-compression-filter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Query-guided contextual document compression engine pruning irrelevant web noise and reducing LLM context window overhead.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "context-optimization",
+  "tags": [
+    "contextual-compression",
+    "token-reduction",
+    "context-window",
+    "retrieval-filter",
+    "prompt-efficiency"
+  ],
+  "inputs": {
+    "query": {
+      "type": "string"
+    },
+    "raw_document_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "compression_ratio": {
+      "type": "string"
+    },
+    "tokens_saved_estimate": {
+      "type": "integer"
+    },
+    "compressed_context_text": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
